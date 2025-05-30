@@ -30,7 +30,13 @@ const labelForBank = document.createElement('label');
 const sectionForBank = document.createElement('section');
 console.log(sectionForBank);
 const inputForBank = document.createElement('input');
+inputForBank.setAttribute = ('type', 'number');
+inputForBank.setAttribute = ('id', 'bank-input');
+inputForBank.setAttribute = ('name', 'bank-input');
+inputForBank.setAttribute = ('placeholder', 'Add you number here.');
 console.log(inputForBank);
+
+
 
 sectionForBank.appendChild(labelForBank);
 
