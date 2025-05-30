@@ -23,35 +23,36 @@ oddsEventApp.appendChild(h1FormTitle);
 // Create Odds and Events Form
 const formOddsEvent = document.createElement('form');
 
-// Create SECTION for Bank input
-const sectionForBank = document.createElement('section');
-console.log(sectionForBank);
 
-// Create 
+
+// Create LABEL for Bank Input
 const labelForBank = document.createElement('label');
+labelForBank.setAttribute = ('for', 'bank-input');
+labelForBank.textContent = 'Bank:';
 
-
-
-// Add elements to Bank section
-
-
+// Create INPUT for Bank
 const inputForBank = document.createElement('input');
 inputForBank.setAttribute = ('type', 'number');
 inputForBank.setAttribute = ('id', 'bank-input');
 inputForBank.setAttribute = ('name', 'bank-input');
-inputForBank.setAttribute = ('placeholder', 'Add you number here.');
+inputForBank.setAttribute = ('placeholder', 'Add your numbers here.');
 console.log(inputForBank);
 
+// Create SECTION for Bank input
+const sectionForBank = document.createElement('section');
+console.log(sectionForBank);
 
-
+// Append BANK Label and Input to BANK Section
 sectionForBank.appendChild(labelForBank);
+sectionForBank.appendChild(inputForBank);
 
 //Put form into app section
 //oddsEventApp.appendChild(formOddsEvent);
-
+//sectionForBank.appendChild(labelForBank);
 
 // 
 // Create section node for the Bank
   // Create a label for the bank
   // Create text for the label
   // Create input for the label
+  // Add elements to Bank section
