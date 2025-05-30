@@ -7,28 +7,34 @@
 
 
 
-
+// Grab div named #app. Form will be placed in div
 const oddsEventApp = document.querySelector(`#app`);
 console.log(oddsEventApp);
 
-const h1FormTitle = document.createElement('h1');
 
+
+
+// Create H1 title of form
+const h1FormTitle = document.createElement('h1');
+// Add text to H1 title
 h1FormTitle.innerText = 'Odds and Events';
 oddsEventApp.appendChild(h1FormTitle);
 
-// Odds and Events Form
+// Create Odds and Events Form
 const formOddsEvent = document.createElement('form');
 
+// Create SECTION for Bank input
+const sectionForBank = document.createElement('section');
+console.log(sectionForBank);
 
-
-
+// Create 
 const labelForBank = document.createElement('label');
 
 
 
 // Add elements to Bank section
-const sectionForBank = document.createElement('section');
-console.log(sectionForBank);
+
+
 const inputForBank = document.createElement('input');
 inputForBank.setAttribute = ('type', 'number');
 inputForBank.setAttribute = ('id', 'bank-input');
@@ -40,9 +46,9 @@ console.log(inputForBank);
 
 sectionForBank.appendChild(labelForBank);
 
-
 //Put form into app section
-oddsEventApp.appendChild(formOddsEvent);
+//oddsEventApp.appendChild(formOddsEvent);
+
 
 // 
 // Create section node for the Bank
